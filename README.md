@@ -12,14 +12,13 @@ For example:
 ```csharp
 Enter the sequence of numbers (or 'exit' to quit)
 4433555 555666#
-The result is HELLO
+The result is: HELLO
 
 Or
 
 Enter the sequence of numbers (or 'exit' to quit)
 8 88777444666*664#
-The result is TURING
-
+The result is: TURING
 ```
 
 ## Error Handling
