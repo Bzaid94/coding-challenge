@@ -7,9 +7,9 @@ public class OldPhonePad
     // Mapping from digit to corresponding characters on a phone keypad.
     private static readonly Dictionary<char, string> DigitToCharacters = new()
     {
-        {'2', "abc"}, {'3', "def"},
-        {'4', "ghi"}, {'5', "jkl"}, {'6', "mno"},
-        {'7', "pqrs"}, {'8', "tuv"}, {'9', "wxyz"},
+        {'2', "ABC"}, {'3', "DEF"},
+        {'4', "GHI"}, {'5', "JKL"}, {'6', "MNO"},
+        {'7', "PQRS"}, {'8', "TUV"}, {'9', "WXYZ"},
     };
 
     /// <summary>
