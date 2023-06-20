@@ -20,6 +20,12 @@ public class OldPhonePad
     /// <exception cref="ArgumentException">Thrown when input contains unexpected characters.</exception>
     public string ConvertToText(string input)
     {
+        // Check if input is not null or empty before accessing Last() method
+        if (string.IsNullOrEmpty(input) || input.Last() != '#')
+        {
+            throw new ArgumentException("End character '#' not found in input.");
+        }
+
         var result = new StringBuilder();
         var count = 0;
         char? lastDigit = null;
@@ -71,6 +77,7 @@ public class OldPhonePad
 
         return result.ToString();
     }
+
     private static void AppendCorrespondingCharacter(StringBuilder result, char lastDigit, int count)
     {
         result.Append(DigitToCharacters[lastDigit][(count - 1) % DigitToCharacters[lastDigit].Length]);
